@@ -17,7 +17,7 @@ public class Category {
 	@Column(name = "cate_id")
 	private int cateid;
 
-	@Column(name = "cate_name")
+	@Column(name = "cate_name", columnDefinition = "NVARCHAR(255)")
 	private String catename;
 
 	@Column(name = "icons")

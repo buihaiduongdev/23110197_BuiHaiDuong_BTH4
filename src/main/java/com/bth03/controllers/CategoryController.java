@@ -29,12 +29,11 @@ public class CategoryController extends HttpServlet {
 
 		if (uri.endsWith("home")) {
 			List<Category> list;
-			if (user.getRoleid() == 2) {
-				// Manager
-				list = cateDao.findByUserId(user.getUserid());
-			} else {
-				// User, Admin
+			if (user.getRoleid() == 3) {
+				// admin
 				list = cateDao.findAll();
+			} else {
+				list = cateDao.findByUserId(user.getUserid());
 			}
 			req.setAttribute("categories", list);
 			req.getRequestDispatcher("/views/home.jsp").forward(req, resp);
