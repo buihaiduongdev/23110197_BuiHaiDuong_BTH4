@@ -30,6 +30,17 @@ public class User {
 	@Column(name = "roleid")
 	private int roleid; // 1-user, 2-manager, 3-admin
 
+	@Column(name = "fullname")
+	private String fullName;
+
+	@Column(name = "phone")
+	private String phone;
+
+	@Column(name = "email")
+	private String email;
+	@Column(name = "avatar")
+	private String avatar;
+
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Category> categories;
 
@@ -63,6 +74,39 @@ public class User {
 
 	public void setRoleid(int roleid) {
 		this.roleid = roleid;
+	}
+
+	// getter & setter
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
 	}
 
 	public List<Category> getCategories() {

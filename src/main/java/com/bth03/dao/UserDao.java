@@ -5,4 +5,7 @@ import com.bth03.entity.User;
 public interface UserDao {
 	User login(String username, String password);
 
+	User findById(int id);
+
+	void update(User user);
 }

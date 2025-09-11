@@ -3,6 +3,7 @@ C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\controllers\CategoryController.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\controllers\LoginController.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\controllers\LogoutController.java
+C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\controllers\ProfileController.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\dao\CategoryDao.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\dao\impl\CategoryDaoImpl.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\dao\impl\UserDaoImpl.java
@@ -11,3 +12,4 @@ C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\entity\User.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\filter\AuthFilter.java
 C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\utils\InitDB.java
+C:\Users\haidu\Documents\WorkspaceSP\23110197_BuiHaiDuong_BTH4\src\main\java\com\bth03\utils\JpaUtil.java
