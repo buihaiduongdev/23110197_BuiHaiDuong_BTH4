@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- Mapping cho layout web chung -->
+    <mapping path="/*" name="web" decorator="/web.jsp"/>
+    
+    <!-- Mapping riêng cho admin -->
+    <mapping path="/admin/*" name="admin" decorator="/admin.jsp"/>
+
+    <!-- Mapping riêng cho login -->
+    <mapping path="/login*" name="login" decorator="/login.jsp"/>
+
+    <!-- Loại trừ API (nếu có) -->
+    <mapping path="/api/*" exclude="true"/>
+</sitemesh>
