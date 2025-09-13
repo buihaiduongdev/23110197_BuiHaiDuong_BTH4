@@ -65,11 +65,11 @@
 			<artifactId>sitemesh</artifactId>
 			<version>3.2.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.34</version>
-			<scope>provided</scope>
+			<version>1.18.40</version>
 		</dependency>
 		<!-- Database driver -->
 		<dependency>
