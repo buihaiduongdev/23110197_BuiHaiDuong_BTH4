@@ -17,22 +17,28 @@
             </h3>
         </div>
         <div class="card-body">
-            <form method="post" action="${pageContext.request.contextPath}/category/${category != null ? 'edit' : 'add'}">
+            <form method="post" action="${pageContext.request.contextPath}/category/save" enctype="multipart/form-data">
                 <c:if test="${category != null}">
                     <input type="hidden" name="id" value="${category.cateid}"/>
                 </c:if>
 
                 <div class="mb-3">
                     <label for="catename" class="form-label">Tên Category</label>
-                    <input type="text" class="form-control" id="catename" name="catename"
+                    <input type="text" class="form-control" id="catename" name="cateName"
                            value="${category != null ? category.catename : ''}" required/>
                 </div>
 
                 <div class="mb-3">
-                    <label for="icon" class="form-label">Icon</label>
-                    <input type="text" class="form-control" id="icon" name="icon"
-                           value="${category != null ? category.icon : ''}" required/>
+                    <label for="iconFile" class="form-label">Ảnh mô tả</label>
+                    <input type="file" class="form-control" id="iconFile" name="iconFile"/>
                 </div>
+
+                <c:if test="${category != null && category.icon != null}">
+                    <div class="mb-3 text-center">
+                        <img src="${pageContext.request.contextPath}/uploads/${category.icon}" 
+                             alt="Category Icon" class="img-thumbnail" style="max-width:150px"/>
+                    </div>
+                </c:if>
 
                 <div class="text-center">
                     <button type="submit" class="btn btn-success px-4">Lưu</button>
